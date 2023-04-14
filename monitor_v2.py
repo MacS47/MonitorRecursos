@@ -12,17 +12,11 @@ HISTÓRICO:
 	01/01/2022 - Alexsandre Macaulay
 """
 
-import smtplib
 import datetime
 import time
 import psutil
 import pyodbc
 
-# Importando módulos para obtenção de dados do sistema operacional
-#------------------------------------------------------------------
-
-# Instanciando o método today()
-#------------------------------------------------------------------
 driver = "DRIVER"
 server_name = "SEU_SERVIDOR"
 database_name = "SEU DATABASE"
@@ -30,6 +24,11 @@ user = "USER"
 password = "PASSWORD"
 STRING_CONNECTION = "DRIVER={driver};SERVER={server_name};DATABASE={database_name};UID={user};PWD={password}"
 
+# Importando módulos para obtenção de dados do sistema operacional
+#------------------------------------------------------------------
+
+# Instanciando o método today()
+#------------------------------------------------------------------
 today = datetime.date.today()
 
 def store_db(cpu,ram):

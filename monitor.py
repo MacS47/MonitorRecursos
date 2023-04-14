@@ -1,3 +1,14 @@
+"""
+SITUAÇÃO:	
+	Extrair dados de consumo de recursos do servidor e disponibilizá-los em arquivos externos, os quais devem ser consumidos em um segundo momento.
+
+OBJETIVO:
+	Auxiliar no controle de consumo de recursos de servidores/desktops.
+
+HISTÓRICO:
+	01/01/2021 - Alexsandre Macaulay
+"""
+
 import datetime
 import time
 import psutil
